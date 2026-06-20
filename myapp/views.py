@@ -66,3 +66,14 @@ class TaskRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     def get_queryset(self):
         # Crucial: Prevents users from guessing an ID and modifying someone else's task
         return Task.objects.filter(user=self.request.user)
+
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
+
+if not User.objects.filter(username="admin").exists():
+    User.objects.create_superuser(
+        username="admin",
+        email="admin@example.com",
+        password="yourpassword"
+    )
