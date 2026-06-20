@@ -45,14 +45,7 @@ const NavBar = () => {
               <FaPlusCircle size={18} className="text-info" />
               <span>Add Task</span>
             </Nav.Link>
-
-            <Nav.Link
-              href="/tasks"
-              className="d-flex align-items-center gap-2 px-3 rounded text-light-50"
-            >
-              <FaTasks size={18} className="text-info" />
-              <span>View Tasks</span>
-            </Nav.Link>
+            
             <Nav.Link
               href="/analytics"
               className="d-flex align-items-center gap-2 px-3 rounded text-light-50"

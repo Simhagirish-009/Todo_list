@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8000/api";
+const API_URL = "https://todo-list-pv3d.onrender.com/api";
 
 // Helper function to get JWT token headers
 const getAuthConfig = () => {
